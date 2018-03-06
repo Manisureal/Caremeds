@@ -15,6 +15,6 @@ Rails.application.routes.draw do
 
   get 'pages/updates'
 
-  # root to: 'pages#home'
-  root to: 'application#hello'
+  root to: 'pages#home'
+  # root to: 'application#hello'
 end
