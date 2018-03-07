@@ -7,5 +7,12 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
-import 'bootstrap';
+
+// import 'jquery';
+// import 'bootstrap';
+console.log('Hello World from Webpacker');
+
+// import { dropDown } from '../components/navbar';
+// dropDown();
+
+console.log('Imported');
