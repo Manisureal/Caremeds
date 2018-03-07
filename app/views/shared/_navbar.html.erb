@@ -5,12 +5,26 @@
   <% end %>
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class="navbar-wagon-right">
 
-      <!-- Links when logged in -->
-      <%= link_to "Become a Cook", pages_home_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Messages", pages_home_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "My profile", pages_home_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <div class="hidden-xs hidden-sm">
+        <%= link_to "Home", pages_home_path, class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Pharmacy", pages_pharmacy_path, class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Care Providers", pages_careproviders_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
+
+    <div class="dropdown hidden-xs hidden-sm">
+      <a class="navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">More..<span class="caret"></span></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">Nav header</li>
+        <li><a href="#">Separated link</a></li>
+        <li><a href="#">One more separated link</a></li>
+      </ul>
+    </div>
 
   </div>
 
