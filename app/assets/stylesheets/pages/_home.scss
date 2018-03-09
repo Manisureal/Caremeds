@@ -79,44 +79,100 @@ hr.style-two {
 // }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {
-  .parallax {
-        background-attachment: scroll;
-    }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 
 
