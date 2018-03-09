@@ -1,3 +1,10 @@
+.forced{
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index:999;
+}
+
 .footer {
   background: #009688;
   display: flex;
@@ -34,8 +41,8 @@
     text-transform: none;
 }
 
-.footer-copyright {
-  overflow: hidden;
+.footer-copyright{
+  // overflow: hidden;
   // min-height: 50px;
   background-color: rgb(32, 142, 128);
   p {
