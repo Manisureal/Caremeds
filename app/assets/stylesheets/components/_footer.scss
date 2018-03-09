@@ -1,9 +1,13 @@
+// Used to wrap both parts of the Footer into one for footer fixed position on other pages on sites //
+
 .forced{
   right: 0;
   bottom: 0;
   left: 0;
   z-index:999;
 }
+
+// Footer CSS Code //
 
 .footer {
   background: #009688;
@@ -41,6 +45,8 @@
     text-transform: none;
 }
 
+// Part two of Footer CSS Code //
+
 .footer-copyright{
   // overflow: hidden;
   // min-height: 50px;
@@ -55,4 +61,8 @@
   }
 }
 
+// Call this class on a div on any of the pages within the site to fix the footer to the bottom of the page //
 
+.fixed-banner {
+  min-height: 100vh;
+}
