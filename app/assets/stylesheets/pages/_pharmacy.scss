@@ -1,0 +1,56 @@
+// Static Card //
+
+.card {
+  background-color: white;
+  box-shadow: 0px 5px 20px #555;
+  margin: 10px;
+}
+
+.card:hover .card-image img {
+  width: 110%;
+  filter: grayscale(0);
+
+}
+.card-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.card-image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+  transition-property: filter width;
+  transition-duration: .3s;
+  // opacity: 0.8;
+}
+
+
+// Hover Effects //
+
+.card-description {
+  position: absolute;
+  bottom: 10%;
+  left: 23%;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(168,168,168,0.72);
+  padding: 10px;
+  border-radius: 5px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.card:hover .card-description {
+  visibility: visible;
+  opacity: 1;
+}
