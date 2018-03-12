@@ -1,9 +1,24 @@
+// General CSS for Pharmacy Page //
+
+.background-color {
+  background-color: #FAFAFA;
+  padding: 25px 0;
+}
+
+.pad-top {
+  padding-top: 22.5px;
+}
+.pad-bot {
+  padding-bottom: 22.5px;
+}
+
 // Static Card //
 
 .card {
   background-color: white;
   box-shadow: 0px 5px 20px #555;
-  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .card:hover .card-image img {
