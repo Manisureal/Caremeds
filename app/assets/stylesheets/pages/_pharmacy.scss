@@ -2,14 +2,14 @@
 
 .background-color {
   background-color: #FAFAFA;
-  padding: 25px 0;
+  padding: 30px 0;
 }
 
 .pad-top {
   padding-top: 22.5px;
 }
 .pad-bot {
-  padding-bottom: 22.5px;
+  padding-bottom: 50px;
 }
 
 // Static Card //
@@ -117,9 +117,18 @@
   color: #EDEDED;
 }
 
+// Quote Div //
 
-
-
+.quote {
+  margin: 70px 20px 40px 20px;
+  color: #4C4C4C;
+  p {
+    font-style: italic;
+  }
+  p .fa {
+      font-style: italic;
+    }
+}
 
 
 
