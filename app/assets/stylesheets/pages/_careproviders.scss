@@ -1,38 +1,38 @@
-.pic-card {
-  // background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
-  height: 300px;
-  background-image: url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
-  filter: grayscale(1);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  &:hover {
-    filter: grayscale(0);
-  }
-}
+// .pic-card {
+//   // background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
+//   height: 300px;
+//   background-image: url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
+//   filter: grayscale(1);
+//   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+//   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+//   &:hover {
+//     filter: grayscale(0);
+//   }
+// }
 
-.pic-card1 {
-  // background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
-  height: 300px;
-  background-image: url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
-  filter: grayscale(1);
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  &:hover {
-    filter: grayscale(0);
-  }
-}
+// .pic-card1 {
+//   // background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
+//   height: 300px;
+//   background-image: url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
+//   filter: grayscale(1);
+//   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+//   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+//   &:hover {
+//     filter: grayscale(0);
+//   }
+// }
 
-.pic-card2 {
-  // background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
-  height: 300px;
-  background-image: url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
-  filter: grayscale(1);
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-  &:hover {
-    filter: grayscale(0);
-  }
-}
+// .pic-card2 {
+//   // background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
+//   height: 300px;
+//   background-image: url('https://images.unsplash.com/photo-1509789129199-7c90e936483a?ixlib=rb-0.3.5&s=8938a2ffd28dda17b708e2d099b61cef&auto=format&fit=crop&w=1051&q=80');
+//   filter: grayscale(1);
+//   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+//   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+//   &:hover {
+//     filter: grayscale(0);
+//   }
+// }
 
 // .text-card {
 //   -webkit-clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
