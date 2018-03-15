@@ -20,8 +20,20 @@
   font-weight: lighter;
   color: rgb(255, 255, 255);
   opacity: 0.6;
-  margin-bottom: 30px;
 }
+
+.fadeInLeft {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  // height: 85px;
+}
+
+// Hide default JS Banner Content //
+
+.content { display: none; }
+
 
 // All Banners standard parallax settings //
 .parallax1, .parallax2, .parallax3, .parallax4 {
