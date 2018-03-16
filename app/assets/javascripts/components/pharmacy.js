@@ -3,5 +3,5 @@
 $(".clickToScroll").click(function() {
   $('html, body').animate({
     scrollTop: $(".pad-bot").offset().top
-  }, 1500);
+  }, 500);
 });
