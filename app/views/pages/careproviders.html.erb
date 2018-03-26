@@ -15,11 +15,19 @@
       <p class="text-center">There has been many studies carried out in this area over the last 4 years and all have published their findings with trends idenfying risks that need to be addressed.</p>
       <p class="text-center">Homecare providers have until now been left exposed by a lack of systems for evidencing outcomes around medicines management in the home.</p>
     </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+        <div class="graph">
+          <%= image_tag "charts/medic-error.png" %>
+        </div>
+      </div>
+    </div>
     <!-- <div class="col-xs-12 col-sm-4">
       <p>Homecare providers have until now been left exposed by a lack of systems for evidencing outcomes around medicines management in the home. Not any longer.</p>
     </div> -->
   </div>
 </div>
+
 <div class="background-color">
   <div class="container">
     <div class="row">
@@ -31,7 +39,7 @@
   </div>
 </div>
 
-<div class="pharm-parallax" style="background-image: url('https://images.unsplash.com/photo-1464146072230-91cabc968266?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81fa6e2c81cf9e4e1b7c51f18eef6eb0&auto=format&fit=crop&w=1050&q=80');opacity: 0.5;"></div>
+<div class="pharm-parallax" style="background-image: url(<%= image_path 'charts/mar.png'%>);opacity: 0.5;"></div>
 
 <div class="container">
   <div class="row">
@@ -84,6 +92,33 @@
   </div>
 
 </div>
+
+<!--
+<div id="charts" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#charts" data-slide-to="0"></li>
+    <li data-target="#charts" data-slide-to="1"></li>
+    <li data-target="#charts" data-slide-to="2"></li>
+  </ol>
+
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%#= image_tag "charts/mar.png" %>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+    <div class="item">
+      <%#= image_tag "charts/prn.png" %>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
 
 <div class="container">
   <div class="row">
