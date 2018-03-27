@@ -5,37 +5,47 @@
         <source <%#= video_tag "test.mp4" %> </source> </video>
 </div> -->
 
-  <video playsinline autoplay muted loop>
-    <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761">
-      <source <%#= video_tag "test.mp4" %> </source>
-  </video>
-
-
+<video playsinline autoplay muted loop>
+  <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761">
+    <source <%#= video_tag "test.mp4" %> </source>
+</video>
 
 
 <div class="overlay">
-  <h2>Are you looking to reduce Medication Errors? <br>
-    <br>
-      Of course you are, that’s why you are here.</h2>
+  <div class="overlay-text">
+    <h1>Are you looking to reduce Medication Errors?</h1>
+    <h2> Of course you are, that’s why you are here.</h2>
+  </div>
 </div>
-
 
 <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
+  <div class="row pad-top">
+    <div class="col-xs-12 pad-top pad-bot">
       <h4 class="text-center brown-text"><strong>30,000 residents receive medications using CareMeds systems everyday</strong></h4>
-      <p class="text-center">Care providers are under increasing pressure to reduce the number of errors made when administering medications. Together with CareMeds and your local pharmacy, you have the solution</p>
-      <p class="text-center">Whether it’s our market leading <u>Paper MARs</u> or our very latest <u>eMAR</u> system supported by the patented <u>MultiMeds or Unit Dose</u> blister packs, care providers just like you are increasingly choosing pharmacies that use CareMeds </p>
+      <p class="text-center"><b>Care providers</b> are under increasing pressure to reduce the number of errors made when administering medications. Together with CareMeds and your local pharmacy, you have the solution</p>
     </div>
   </div>
-  <div class="row">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-        <div class="graph">
-          <%= image_tag "charts/medic-error.png" %>
+</div>
+<div class="background-color">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+          <div class="graph">
+            <%= image_tag "charts/flow1.png" %>
+          </div>
         </div>
-      </div>
+    </div>
   </div>
 </div>
+<div class="container">
+  <div class="row pad-top">
+    <div class="col-xs-12 pad-top pad-bot">
+      <p class="text-center">Whether it’s our market leading <b><u>Paper MARs</u></b> or our very latest <b><u>eMAR</u></b> system supported by the patented <b><u>MultiMeds or Unit Dose</u></b> blister packs, care providers just like you are increasingly choosing pharmacies that use CareMeds </p>
+      <p class="text-center">If you are serious about improving patient outcomes, get serious with <b>CareMeds</b>.</p>
+    </div>
+  </div>
+</div>
+
 
 <!-- <div class="container">
   <div class="row">
@@ -54,6 +64,7 @@
   </div>
 </div> -->
 
+<!--
 <div class="background-color">
   <div class="container">
     <div class="row">
@@ -64,6 +75,7 @@
     </div>
   </div>
 </div>
+ -->
 
 <div class="pharm-parallax" style="background-image: url(<%= image_path 'charts/mar.png'%>);opacity: 0.5;"></div>
 
