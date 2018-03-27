@@ -1,31 +1,43 @@
 <% provide(:title, 'Care Providers') %>
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1464146072230-91cabc968266?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81fa6e2c81cf9e4e1b7c51f18eef6eb0&auto=format&fit=crop&w=1050&q=80');">
-  <div class="banner-content">
-    <h1>Are you looking to reduce Medication Errors?</h1>
-    <p>Caremeds has the solution...</p>
-    <!-- <a class="btn btn-primary btn-lg">Start now</a> -->
-  </div>
+<!-- <div class="contain">
+    <video loop muted autoplay id="myVideo">
+        <source <%#= video_tag "test.mp4" %> </source> </video>
+</div> -->
+
+  <video playsinline autoplay muted loop>
+    <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761">
+      <source <%#= video_tag "test.mp4" %> </source>
+  </video>
+
+
+
+
+<div class="overlay">
+  <h2>Are you looking to reduce Medication Errors? <br>
+    <br>
+      Of course you are, that’s why you are here.</h2>
 </div>
 
-<div class="container pad">
+
+<div class="container">
   <div class="row">
     <div class="col-xs-12">
       <h4 class="text-center brown-text"><strong>Medication administration errors in care and nursing homes are at unacceptable levels</strong></h4>
       <p class="text-center">There has been many studies carried out in this area over the last 4 years and all have published their findings with trends idenfying risks that need to be addressed.</p>
       <p class="text-center">Homecare providers have until now been left exposed by a lack of systems for evidencing outcomes around medicines management in the home.</p>
     </div>
-    <div class="row">
+  </div>
+  <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
         <div class="graph">
           <%= image_tag "charts/medic-error.png" %>
         </div>
       </div>
-    </div>
+  </div>
     <!-- <div class="col-xs-12 col-sm-4">
       <p>Homecare providers have until now been left exposed by a lack of systems for evidencing outcomes around medicines management in the home. Not any longer.</p>
     </div> -->
-  </div>
 </div>
 
 <div class="background-color">
