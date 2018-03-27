@@ -19,7 +19,17 @@ video {
   z-index:-1;
 }
 
-.overlay h1,h2 {
+.overlay h1 {
+  // background: #000 none repeat scroll 0 0;
+  color: tan;
+  font-weight: 600;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.overlay h2 {
   // background: #000 none repeat scroll 0 0;
   color: tan;
   font-weight: 600;
