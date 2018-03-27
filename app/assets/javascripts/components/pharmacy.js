@@ -2,6 +2,6 @@
 
 $(".clickToScroll").click(function() {
   $('html, body').animate({
-    scrollTop: $(".pad-bot").offset().top
+    scrollTop: $(".click2Scroll").offset().top
   }, 500);
 });
