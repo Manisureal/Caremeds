@@ -8,9 +8,6 @@ class PagesController < ApplicationController
   def careproviders
   end
 
-  def emar
-  end
-
   def faqs
   end
 
