@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get 'pages/careproviders'
 
-  get 'pages/emar'
-
   get 'pages/faqs'
 
   get 'pages/news'
