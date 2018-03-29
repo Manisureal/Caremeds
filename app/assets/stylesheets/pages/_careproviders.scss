@@ -55,17 +55,33 @@
 }
 
 // Innovative Models Cards //
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.center-wrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .innovative-models-cards {
-  display:flex;
-  height: 500px;
-  background-color: white;
-  box-shadow: 0px 5px 20px #555;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  position: relative;
+  flex-wrap: wrap;
+  overflow: hidden;
+  // background: transparentize(blue,0.5)
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 
 .innovative-models-image {
-  height: 200px;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    // height: 275px;
+    position: relative;
+    // background-image: url('https://d13yacurqjgara.cloudfront.net/users/150724/screenshots/2211976/365_the_end_1x.png');
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
