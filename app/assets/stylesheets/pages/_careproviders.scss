@@ -74,7 +74,6 @@
   // background: transparentize(blue,0.5)
   padding-top: 15px;
   padding-bottom: 15px;
-
 }
 
 .innovative-models-image {
@@ -87,6 +86,10 @@
     & img {
       max-width: 100%;
     }
+}
+
+.next:hover {
+    transform: scale(1.5);
 }
 
 .cursor {
