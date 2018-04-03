@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   get 'pages/updates'
 
   root to: 'pages#home'
-  # root to: 'application#hello'
+
+  get 'contact-us', to: 'contacts#new', as: 'new_contact'
+  post 'contact-us', to: 'contacts#create', as: 'create_contact'
 end
