@@ -10,9 +10,10 @@ class MessageMailerTest < ActionMailer::TestCase
   # end
 
   test "contact_me" do
-    contact = Contact.new name: 'Manny',
+    contact = Contact.new({ name: 'Manny',
                           email: 'mannie@caremeds.co.uk',
                           body: 'Hello there just testing this mailer...'
+                          })
 
 
     email = MessageMailer.contact_me(contact)
@@ -22,7 +23,7 @@ class MessageMailerTest < ActionMailer::TestCase
     end
 
     assert_equal 'Message from www.murdo.ch', email.subject
-    assert_equal ['stephen@example.org'], email.to
+    assert_equal ['mansoor@caremeds.co.uk'], email.to
     assert_equal ['mannie@caremeds.co.uk'], email.from
     assert_match /Hello there just testing this mailer.../, email.body.encoded
   end
