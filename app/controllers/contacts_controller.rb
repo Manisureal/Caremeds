@@ -11,8 +11,7 @@ class ContactsController < ApplicationController
 
       MessageMailer.contact_me(@contact).deliver_now
       # render :new, notice: "Message received, Thanks!"
-      redirect_to request.referrer
-      flash[:success] = "Default photo set!"
+      redirect_to request.referrer, notice: "Thank you, We will be in touch shortly!"
     else
       render :new
     end
