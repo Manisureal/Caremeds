@@ -10,7 +10,9 @@ class ContactsController < ApplicationController
     if @contact.valid?
 
       MessageMailer.contact_me(@contact).deliver_now
-      redirect_to new_contact_url, notice: "Message received, Thanks!"
+      # render :new, notice: "Message received, Thanks!"
+      redirect_to request.referrer
+      flash[:success] = "Default photo set!"
     else
       render :new
     end
