@@ -16,7 +16,4 @@ class PagesController < ApplicationController
 
   def contactus
   end
-
-  def updates
-  end
 end
