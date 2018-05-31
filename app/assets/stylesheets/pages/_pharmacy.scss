@@ -31,18 +31,18 @@
 
 // Static Cards //
 
-.card {
+.card,.card2, .card3 {
   background-color: white;
   box-shadow: 0px 5px 20px #555;
   margin-top: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
-.card:hover .card-image img {
-  width: 110%;
-  filter: grayscale(0);
+// .card:hover
+// .card2:hover
+// .card3:hover
 
-}
 .card-image {
   height: 200px;
   position: relative;
@@ -60,32 +60,53 @@
   // opacity: 0.8;
 }
 
-
 // Hover Effects //
 
-.card-description {
-  position: absolute;
-  bottom: 10%;
-  // left: 23%;
-  visibility: hidden;
-  opacity: 0;
-  background: rgba(168,168,168,0.72);
-  padding: 10px;
-  border-radius: 5px;
-}
-.card-description h2 {
-  font-size: 24px;
-}
-.card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
-}
-
-.card:hover .card-description {
+.card:hover {
   visibility: visible;
   opacity: 1;
+  transform:scale(3,3);
+  transform-origin: left;
+  z-index:100;
+  .card-image img {filter: grayscale(0);}
 }
+
+.card2:hover {
+  visibility: visible;
+  opacity: 1;
+  transform:scale(3,3);
+  z-index:100;
+  .card-image img {filter: grayscale(0);}
+}
+
+.card3:hover {
+  visibility: visible;
+  opacity: 1;
+  transform:scale(3,3);
+  transform-origin: right;
+  z-index:100;
+  .card-image img {filter: grayscale(0);}
+}
+
+// .card-description {
+//   position: absolute;
+//   bottom: 10%;
+//   // left: 23%;
+//   visibility: hidden;
+//   opacity: 0;
+//   background: rgba(168,168,168,0.72);
+//   padding: 10px;
+//   border-radius: 5px;
+// }
+// .card-description h2 {
+//   font-size: 24px;
+// }
+// .card-description p {
+//   font-size: 14px;
+//   opacity: 0.7;
+//   font-weight: lighter;
+// }
+
 
 // Parallax Image //
 
