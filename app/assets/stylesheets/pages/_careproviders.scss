@@ -77,19 +77,22 @@
 }
 
 .innovative-models-image {
-    width: 100%;
-    // height: 275px;
-    position: relative;
-    // background-image: url('https://d13yacurqjgara.cloudfront.net/users/150724/screenshots/2211976/365_the_end_1x.png');
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    & img {
-      max-width: 100%;
-    }
+  width: 100%;
+  // height: 275px;
+  position: relative;
+  // background-image: url('https://d13yacurqjgara.cloudfront.net/users/150724/screenshots/2211976/365_the_end_1x.png');
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  & img {
+    max-width: 100%;
+  }
 }
 
 .next:hover {
-    transform: scale(1.5);
+  // transform: scale(1.5);
+  transform:scale(1.6,1.6);
+  transform-origin: right;
+  background: white;
 }
 
 .cursor {
