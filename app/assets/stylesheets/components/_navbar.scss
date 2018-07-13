@@ -41,8 +41,12 @@
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  background-color: #176CAF;
+  color:white;
+  border: 2px double #1C60AD;
+  border-radius: 10px 10px 10px 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 /* Dropdown menu */
