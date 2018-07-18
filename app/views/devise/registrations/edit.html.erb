@@ -28,8 +28,10 @@
             <%= f.input :password_confirmation, required: false, input_html: { class: 'form-control' } %>
           </div>
           <div class="form-group">
-            <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true, input_html: { class: 'form-control' } %>
+            <%= f.input :current_password, hint: "we need your current password to confirm your changes ", required: true, input_html: { class: 'form-control' } %>
           </div>
+          <br>
+          <span class="error"></span>
           <br>
 
           <div class="form-actions">
@@ -56,6 +58,18 @@
 
   .form-group input {
     background-color: grey;
+  }
+
+  .hint {
+    color:#2C9C47;
+  }
+
+  .error_notification {
+    color:red;
+  }
+
+  .error {
+    color:red;
   }
 
   h2 {
