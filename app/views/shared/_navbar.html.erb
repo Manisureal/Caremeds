@@ -7,16 +7,59 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right">
 
-    <div class="hidden-xs hidden-sm">
-        <%= link_to "Home", home_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "Pharmacy", pharmacy_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "Care Providers", careproviders_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%#= link_to "EMAR", emar_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "Contact Us", contactus_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%#= link_to "FAQs", faqs_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "News", news_path, class: "navbar-wagon-item navbar-wagon-link" %>
-        <%#= link_to "Updates", updates_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    </div>
+    <% if user_signed_in? %>
+
+      <div class="hidden-xs hidden-sm">
+        <%= link_to "Dashboard", home_path, class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "New Blog", home_path, class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "All Blogs", pharmacy_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+
+      <div class="dropdown hidden-xs hidden-sm">
+        <%= link_to "Page Tabs", class: "navbar-wagon-item navbar-wagon-link", "data-toggle" => "dropdown" do %>
+          Page Tabs <span class="caret"></span>
+        <% end %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li> <%= link_to "Home", home_path %></li>
+          <li> <%= link_to "Pharmacy", pharmacy_path %></li>
+          <li> <%= link_to "Care Providers", careproviders_path %></li>
+          <li> <%= link_to "Contact Us", contactus_path%></li>
+          <li> <%= link_to "News", news_path %></li>
+        </ul>
+      </div>
+
+      <div class="navbar-wagon-item hidden-xs hidden-sm">
+        <div class="dropdown">
+          <%= image_tag "https://png.icons8.com/ios/100/5A6064/circled-#{current_user.first_name[0]}.png", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <%= link_to edit_user_registration_path do %>
+                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <% else %>
+
+      <div class="hidden-xs hidden-sm">
+          <%= link_to "Home", home_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "Pharmacy", pharmacy_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "Care Providers", careproviders_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%#= link_to "EMAR", emar_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "Contact Us", contactus_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%#= link_to "FAQs", faqs_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "News", news_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%#= link_to "Updates", updates_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+
+    <% end %>
 
     <!-- For use of drop down in desktop mode -->
     <!-- <div class="dropdown hidden-xs hidden-sm">
@@ -44,10 +87,22 @@
         <li> <%= link_to "Care Providers", careproviders_path %></li>
         <li> <%#= link_to "EMAR", emar_path %></li>
         <li> <%= link_to "Contact Us", contactus_path%></li>
-        <li class="divider"></li>
-        <li> <%= link_to "FAQs", faqs_path %></li>
         <li> <%= link_to "News", news_path %></li>
-        <li> <%= link_to "Updates", updates_path %></li>
+        <li class="divider"></li>
+        <li><%= link_to "Dashboard", home_path %></li>
+        <li><%= link_to "New Blog", home_path %></li>
+        <li><%= link_to "All Blogs", pharmacy_path %></li>
+        <li class="divider"></li>
+        <li>
+          <%= link_to edit_user_registration_path do %>
+            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+          <% end %>
+        </li>
         <!-- For use of sub drop down in mobile mode -->
         <!-- <li class="dropdown-submenu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
