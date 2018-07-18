@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+  devise_scope :user do
+    get 'admin', to: 'devise/sessions#new'
+  end
   root to: 'pages#home'
 
   get 'home', to: 'pages#home', as: 'home'
