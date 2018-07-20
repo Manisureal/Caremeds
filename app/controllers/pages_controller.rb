@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   end
 
   def news
+    @news_blogs = NewsBlog.all
   end
 
   def contactus
