@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
+  resources :news_blogs
 
   devise_for :users
   devise_scope :user do
     get 'admin', to: 'devise/sessions#new'
   end
-  root to: 'pages#home'
-
-  resources :news_blogs
 
   get 'home', to: 'pages#home', as: 'home'
   get 'pharmacy', to: 'pages#pharmacy', as: 'pharmacy'
@@ -18,5 +16,6 @@ Rails.application.routes.draw do
 
   get 'contact-us', to: 'contacts#new', as: 'new_contact'
   post 'contact-us', to: 'contacts#create', as: 'create_contact'
+  root to: 'pages#home'
 
 end

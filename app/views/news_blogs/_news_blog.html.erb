@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <h1 class="text-center" style="color:#445d77;">Add to your News Blog</h1>
+    <div class="col-xs-12">
+      <%= simple_form_for @news_blog do |form| %>
+      <%#= form_with model: @news_blog, local: true do |form| %>
+      <div class="form-group">
+        <%= form.input :title, input_html: { class: 'form-control' } %>
+      </div>
+      <div class="form-group">
+        <%= form.input :description, input_html: { class: 'form-control', style: 'height:150px' } %>
+      </div>
+      <!-- <div class="form-group"> -->
+        <%= form.input :attachments, as: :file, input_html: { multiple: true } %>
+      <!-- </div> -->
+        <br>
+        <%= form.submit "Add To News", class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  body {
+    background-color: #fff;
+  }
+
+  .row {
+    margin-top:35px;
+    box-shadow:5px 5px 25px 0px #778899 ;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+  }
+
+  .news_blog_title, .news_blog_description, .news_blog_attachments {
+    color:#445d77;
+  }
+
+  .news_blog_title input, .news_blog_description textarea {
+    background:grey;
+    /*background: #A0A0A0;*/
+  }
+
+  input {
+    color:#778899;
+  }
+</style>
