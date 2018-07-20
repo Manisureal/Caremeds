@@ -7,12 +7,15 @@
     <h1>Grow Your Pharmacy business by Improving Medicines Management in Care</h1>
     <!-- <p>Caremeds Pharma&nbsp; | &nbsp;Caremeds Home Manager&nbsp; | &nbsp;Caremeds eMAR&nbsp; | &nbsp;MultiMeds Blister</p> -->
     <div class="banner-icons">
-      <%= image_tag "icons/pharmacy.png" %>
-      <%= image_tag "icons/homemanager.png" %>
-      <%= image_tag "icons/emar.png" %>
-      <%= image_tag "icons/multimeds.png" %>
-      <%= image_tag "icons/careproviders.png" %>
-      <%= image_tag "icons/papermars.png" %>
+      <%= link_to pharmacy_path do %>
+        <%= image_tag "icons/pharmacy.png" %>
+      <% end %>
+      <%= link_to careproviders_path do %>
+        <%= image_tag "icons/papermars.png" %>
+        <%= image_tag "icons/emar.png" %>
+        <%= image_tag "icons/multimeds.png" %>
+        <%= image_tag "icons/careproviders.png" %>
+      <% end %>
     </div>
 
     <div class="fadeInLeft">
