@@ -17,14 +17,14 @@ body {
     background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("banners/news-banner.png");
   }
 
-  .banner {
+  .banner-news {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height:500px;
   }
 
-  .banner-content {
+  .banner-content-news {
     width:50%;
     margin:60px;
     color:white;
