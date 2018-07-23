@@ -25,7 +25,9 @@
             </div>
             <hr style="border-color:#9d9d9d6b;margin:8px 0 8px 0;">
             <p class="news-info">Details</p>
-            <p style="color:#778899"><%= nb.description %></p>
+            <p style="color:#778899" id="truncDescription"><%= nb.description.truncate(100) %></p>
+            <a id="expandMe"> Read more</a>
+            <p style="color:#778899" id="fullDescription"><%= nb.description %></p>
             <div class="row">
               <% counter = 0 %>
               <% if nb.attachments.attachments != nil %>
@@ -53,3 +55,41 @@
   </div>
 </div>
 
+<style>
+  #expandMe {
+    display: block;
+    text-align: center;
+    margin: 30px auto 20px auto;
+    clear: both;
+    width: 250px;
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 0;
+    border-radius: 2px;
+  }
+
+  #expandMe:hover {
+    text-decoration: none;
+    color:#42c9c5;
+    cursor:pointer;
+  }
+</style>
+
+<script>
+  window.onload = function() {
+    $('#fullDescription').hide();
+    $('#truncDescription').addClass('visible');
+    $('#expandMe').on('click',function() {
+      if ($('#truncDescription').hasClass('visible')) {
+          $('#truncDescription').hide();
+          $('#fullDescription').show();
+          $('#truncDescription').removeClass('visible');
+      } else {
+          $('#truncDescription').show();
+          $('#fullDescription').hide();
+          $('#truncDescription').addClass('visible');
+      }
+    });
+  }
+</script>
