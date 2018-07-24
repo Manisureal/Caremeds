@@ -14,7 +14,9 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <% @news_blogs.each do |nb| %>
+          <%# new_counter = 0 %>
+        <% @news_blogs.each_with_index do |nb, i| %>
+          <%# new_counter += 1 %>
           <div class="news-item">
             <div class="title">
               <div class="news-date">
@@ -25,10 +27,10 @@
             </div>
             <hr style="border-color:#9d9d9d6b;margin:8px 0 8px 0;">
             <p class="news-info">Details</p>
-            <p style="color:#778899" id="truncDescription"><%= nb.description.truncate(100) %></p>
-            <a id="expandMe"> Read more</a>
-            <p style="color:#778899" id="fullDescription"><%= nb.description %></p>
-            <div class="row">
+            <p style="color:#778899" class="truncDescription<%=i%>"><%= nb.description.truncate(85) %></p>
+            <a class="expandMe" data-id="<%= i %>"> Read more</a>
+            <p style="color:#778899" class="fullDescription<%=i%>"><%= nb.description %></p>
+            <div class="row attachments<%=i%>">
               <% counter = 0 %>
               <% if nb.attachments.attachments != nil %>
                 <% nb.attachments.each do |a| %>
@@ -56,7 +58,7 @@
 </div>
 
 <style>
-  #expandMe {
+  .expandMe {
     display: block;
     text-align: center;
     margin: 30px auto 20px auto;
@@ -69,7 +71,7 @@
     border-radius: 2px;
   }
 
-  #expandMe:hover {
+  .expandMe:hover {
     text-decoration: none;
     color:#42c9c5;
     cursor:pointer;
@@ -78,18 +80,50 @@
 
 <script>
   window.onload = function() {
-    $('#fullDescription').hide();
-    $('#truncDescription').addClass('visible');
-    $('#expandMe').on('click',function() {
-      if ($('#truncDescription').hasClass('visible')) {
-          $('#truncDescription').hide();
-          $('#fullDescription').show();
-          $('#truncDescription').removeClass('visible');
-      } else {
-          $('#truncDescription').show();
-          $('#fullDescription').hide();
-          $('#truncDescription').addClass('visible');
-      }
+
+    $('.expandMe').each(function(index){
+      // id = $(this).data('id');
+      id = index;
+      $('.fullDescription'+id).hide();
+      $('.attachments'+id).hide();
+      $('.truncDescription'+id).addClass('visible');
     });
+
+    // $('.expandMe').on('click',function() {
+    //   $(this).each(function(index){
+    //   // id = $(this).data('id');
+    //   });
+
+    $('.expandMe').each(function(index){
+
+        $(this).on('click',function() {
+
+        if ($('.truncDescription'+index).hasClass('visible')) {
+            $('.truncDescription'+index).hide();
+            $('.fullDescription'+index).show();
+            $('.attachments'+index).show();
+            $('.truncDescription'+index).removeClass('visible');
+        } else {
+            $('.truncDescription'+index).show();
+            $('.fullDescription'+index).hide();
+            $('.attachments'+index).hide();
+            $('.truncDescription'+index).addClass('visible');
+        }
+      })
+    })
+    // var fullId = $('.fullDescription').data('id');
+    // var dynamicFullId = $('.fullDescription'+fullId);
+    // var dynamicFullId = $('fullDescription[data-id='+fullId+']');
+
+    // var id = $('.expandMe').data('id');
+    // var dynamicClassName = $('.expandMe'+id);
+    // dynamicClassName.on('click',function() {
+
+    // var truncId = $('.truncDescription').data('id');
+    // var dynamicTruncId = $('.truncDescription[data-id='+truncId+']');
+    // var fullId = $('.fullDescription').data('id');
+    // var dynamicFullId = $('fullDescription[data-id='+fullId+']');
+
+    // });
   }
 </script>
