@@ -1,4 +1,6 @@
-<% provide(:title, 'Home') %>
+<%# provide(:title, 'Home') %>
+<% content_for :meta_title, "Home | #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_image, "#{DEFAULT_META["meta_image"]}" %>
 
 <!-- Add a parallax background and a banner image -->
 <div class="parallax1">
