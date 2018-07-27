@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@news_blog.title} | #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, "#{@news_blog.description.truncate(150)}" %>
+<% content_for :meta_keywords, "#{@news_blog.meta_keywords}" %>
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
