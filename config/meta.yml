@@ -1,5 +1,5 @@
 meta_product_name: "CareMeds"
 meta_title: "CareMeds - Improving Medicines Management in Care"
 meta_description: "eMAR system for care homes and Nursing Homes from CareMeds Medication Management"
-meta_image: "caremeds.png"                       # should exist in `app/assets/images/`
+meta_image: "icons/caremeds.png"                       # should exist in `app/assets/images/`
 # twitter_account: "@product_twitter_account"   # required for Twitter Cards

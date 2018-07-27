@@ -1,4 +1,6 @@
-<% provide(:title, 'Pharmacy') %>
+<%# provide(:title, 'Pharmacy') %>
+<% content_for :meta_title, "Pharmacy | #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_image, "#{DEFAULT_META["meta_image"]}" %>
 
 <div class="parallax3">
   <div class="banner">

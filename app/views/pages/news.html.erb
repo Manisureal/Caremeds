@@ -1,4 +1,6 @@
-<% provide(:title, 'News') %>
+<%# provide(:title, 'News') %>
+<% content_for :meta_title, "News | #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_image, "#{DEFAULT_META["meta_image"]}" %>
 
 <div class="parallax-news">
   <div class="banner-news">
