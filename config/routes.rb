@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :news_blogs
 
-  devise_for :users
+  devise_for :users, path_names: {
+    sign_up: '' #Stop Sign Up
+  }
   devise_scope :user do
     get 'admin', to: 'devise/sessions#new'
   end
