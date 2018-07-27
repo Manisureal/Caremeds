@@ -10,11 +10,15 @@
       <div class="form-group">
         <%= form.input :description, input_html: { class: 'form-control', style: 'height:150px' } %>
       </div>
-      <!-- <div class="form-group"> -->
+      <div class="form-group">
         <%= form.input :attachments, as: :file, input_html: { multiple: true } %>
-      <!-- </div> -->
-        <br>
+      </div>
+      <br>
+      <div class="form-group">
+        <%= form.input :meta_keywords, input_html: { class: 'form-control', style: 'height:150px', placeholder: "I, am, adding, keywords, for, this, blog, and, seperating, each, word, by, comma" } %>
+      </div>
         <%= form.submit "Add To News", class: 'btn btn-primary' %>
+        <%= link_to "Add Keywords", "#", class: "btn btn-success", id: "keywords-btn" %>
       <% end %>
     </div>
   </div>
@@ -33,11 +37,11 @@
     margin-bottom: 35px;
   }
 
-  .news_blog_title, .news_blog_description, .news_blog_attachments {
+  .news_blog_title, .news_blog_description, .news_blog_attachments, .news_blog_meta_keywords {
     color:#445d77;
   }
 
-  .news_blog_title input, .news_blog_description textarea {
+  .news_blog_title input, .news_blog_description textarea, .news_blog_meta_keywords textarea {
     background:grey;
     /*background: #A0A0A0;*/
   }
@@ -46,3 +50,13 @@
     color:#778899;
   }
 </style>
+
+<script>
+  window.onload = function() {
+    $('.news_blog_meta_keywords').hide();
+    $('#keywords-btn').on("click",function(e){
+      e.preventDefault();
+      $('.news_blog_meta_keywords').fadeToggle("slow","linear");
+    })
+  }
+</script>
