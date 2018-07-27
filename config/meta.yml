@@ -1,5 +1,10 @@
 meta_product_name: "CareMeds"
 meta_title: "CareMeds - Improving Medicines Management in Care"
 meta_description: "eMAR system for care homes and Nursing Homes from CareMeds Medication Management"
+meta_keywords: "eMAR, Electronic, MAR, Charts, CareMeds, PRN, Pharmacy, MultiMeds, Care Providers,
+                Paper MARs, Patient Centric System, One Pateint Record, Community, Carehome, News,
+                CareMeds Pharma System, Medication Management System, Cloud, Specialist Pharmacy Providers,
+                Financial Plans, Reduce Medication Errors, CareMeds Home Manager, MAR Chart, PRN Chart,
+                Insulin Chart, Topical Chart, Warfarin Chart"
 meta_image: "icons/caremeds.png"                       # should exist in `app/assets/images/`
 # twitter_account: "@product_twitter_account"   # required for Twitter Cards
