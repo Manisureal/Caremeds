@@ -1,4 +1,6 @@
 class NewsBlogsController < ApplicationController
+  before_action :set_news_blog, only: [:show, :edit, :update, :destroy]
+
   def index
     @news_blogs = NewsBlog.all
   end
@@ -22,22 +24,19 @@ class NewsBlogsController < ApplicationController
   end
 
   def show
-    @news_blog = NewsBlog.find(params[:id])
   end
 
   def edit
-    @news_blog = NewsBlog.find(params[:id])
   end
 
   def update
-    @news_blog = NewsBlog.find(params[:id])
     if @news_blog.update(news_blog_params)
+      redirect_to news_blogs_path
       flash[:notice] = "News Blog successfully updated!"
     end
   end
 
   def destroy
-    @news_blog = NewsBlog.find(params[:id])
     if @news_blog.destroy
       redirect_to news_blogs_path
       flash[:notice] = "News Blog successfully deleted!"
@@ -45,6 +44,10 @@ class NewsBlogsController < ApplicationController
   end
 
   private
+
+  def set_news_blog
+    @news_blog = NewsBlog.find(params[:id])
+  end
 
   def news_blog_params
     params.require(:news_blog).permit(:title, :description, attachments: [] )
