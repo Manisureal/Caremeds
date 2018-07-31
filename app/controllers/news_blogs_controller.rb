@@ -50,6 +50,6 @@ class NewsBlogsController < ApplicationController
   end
 
   def news_blog_params
-    params.require(:news_blog).permit(:title, :description, :meta_title, :meta_description, :meta_keywords, attachments: [] )
+    params.require(:news_blog).permit(:title, :description, :meta_keywords, attachments: [] )
   end
 end
