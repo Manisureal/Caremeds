@@ -88,6 +88,7 @@
         <li> <%#= link_to "EMAR", emar_path %></li>
         <li> <%= link_to "Contact Us", contactus_path%></li>
         <li> <%= link_to "News", news_path %></li>
+        <% if user_signed_in? %>
         <li class="divider"></li>
         <li><%= link_to "Dashboard", home_path %></li>
         <li><%= link_to "New Blog", home_path %></li>
@@ -103,6 +104,7 @@
             <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
           <% end %>
         </li>
+        <% end %>
         <!-- For use of sub drop down in mobile mode -->
         <!-- <li class="dropdown-submenu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
