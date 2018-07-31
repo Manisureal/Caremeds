@@ -15,6 +15,13 @@ class PagesController < ApplicationController
     @news_blogs = NewsBlog.all
   end
 
+  def news_show
+    @news_blog = NewsBlog.find(params[:id])
+    respond_to do |format|
+      format.js { render layout: false}
+    end
+  end
+
   def contactus
   end
 end

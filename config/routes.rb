@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'careproviders', to: 'pages#careproviders', as: 'careproviders'
   get 'faqs', to: 'pages#faqs', as: 'faqs'
   get 'news', to: 'pages#news', as: 'news'
+  get 'news_show/:id', to: 'pages#news_show', as: 'show'
   get 'contactus', to: 'pages#contactus', as: 'contactus'
   get 'updates', to: 'pages#updates', as: 'updates'
 

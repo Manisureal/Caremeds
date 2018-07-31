@@ -1,0 +1,17 @@
+$(".truncDescription").show(250);
+// $(".truncDescription-<%=@news_blog.id%>").show(250);
+$(".empty").hide(250);
+// $(".empty-<%=@news_blog.id%>").hide(250);
+// if ($(".truncDescription-<%=@news_blog.id%>").is(":visible") == true) {
+if ($(".truncDescription-<%=@news_blog.id%>").hasClass("visible")) {
+    $(".truncDescription-<%=@news_blog.id%>").hide(250);
+    $(".empty-<%=@news_blog.id%>").html("<%= escape_javascript(render 'news_show')%>");
+    $(".empty-<%=@news_blog.id%>").show(250);
+    $(".truncDescription-<%=@news_blog.id%>").removeClass("visible");
+}else {
+    $(".truncDescription-<%=@news_blog.id%>").show(250);
+    $(".empty-<%=@news_blog.id%>").hide(250);
+    $('.truncDescription').addClass('visible');
+}
+
+
