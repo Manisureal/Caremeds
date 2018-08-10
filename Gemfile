@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
-# ruby '2.5.1'
+ruby '2.5.1'
 
-gem 'execjs', '~> 2.7'
 gem 'bootsnap', require: false
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'

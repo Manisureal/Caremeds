@@ -78,17 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-# production:
-#   <<: *default
-#   database: Caremeds_production
-#   username: Caremeds
-#   password: <%= ENV['CAREMEDS_DATABASE_PASSWORD'] %>
 production:
-  adapter: postgresql
+  <<: *default
   database: Caremeds_production
-  host: localhost
-  port: 5432
-  username: hosting-db
-  password:
-  encoding: unicode
-  pool: 5
+  username: Caremeds
+  password: <%= ENV['CAREMEDS_DATABASE_PASSWORD'] %>
