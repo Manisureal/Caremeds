@@ -19,6 +19,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'jquery-rails'
 gem 'devise'
+gem 'onepagecrm'
 
 
 group :development do
