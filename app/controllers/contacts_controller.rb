@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     # contact_email_hash = {}
     # arr.each_with_index {|value, index| contact_email_hash[index] = value}
     @api_client = OnePageCRM.new(ENV['ONEPAGE_USER_EMAIL'], ENV['ONEPAGE_USER_PASS'])
-    # @api_client = OnePageCRM.new('andy@caremeds.co.uk', 'C4r3m3d5')
+
     @contact = Contact.new(contact_params)
     if @contact.valid?
       # arr << @contact.email
@@ -41,4 +41,4 @@ end
     # else
     #   render :new
     # end
-    # @api_client = OnePageCRM.new('andy@caremeds.co.uk','C4r3m3d5')
+    # @api_client = OnePageCRM.new('','')
