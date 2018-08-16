@@ -20,6 +20,7 @@ gem 'webpacker'
 gem 'jquery-rails'
 gem 'devise'
 gem 'onepagecrm'
+gem 'recaptcha'
 
 
 group :development do
