@@ -12,11 +12,15 @@
           <div class="form">
             <!-- <form> -->
               <%= form_for :contact, url: create_contact_url do |f| %>
-              <div class="form-group">
-                <%= f.text_field :name, placeholder: 'Name', :required => true, class: "form-control" %>
+              <div class="form-group" style="display:flex;">
+                <%= f.text_field :first_name, placeholder: 'First Name', :required => true, class: "form-control", style: "margin-right:10px;" %>
+                <%= f.text_field :last_name, placeholder: 'Last Name', :required => true, class: "form-control" %>
               </div>
               <div class="form-group">
                 <%= f.email_field :email, placeholder: 'Email', :required => true, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.text_field :phone, placeholder: 'Phone', :required => true, class: "form-control" %>
               </div>
               <div class="form-group">
                 <%= f.text_area :body, placeholder: 'Your Message', :required => true, class: "form-control", rows: '6' %>

@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
     # end
 
     #--- Send through API ---#
-    # arr_with_hash = []
+    # @arr_with_hash = []
     # arr = []
     # contact_email_hash = {}
     # arr.each_with_index {|value, index| contact_email_hash[index] = value}
@@ -24,8 +24,7 @@ class ContactsController < ApplicationController
       # arr << @contact.email
       # arr.each_with_index {|value, index| contact_email_hash[index.to_s] = value}
       # @arr_with_hash << contact_email_hash
-      # @api_client.post('contacts.json', {'last_name': @contact.name, 'emails': arr_with_hash, 'background': @contact.body} )
-      @api_client.post('contacts.json', {'last_name': @contact.name, 'emails': [{ 'type' => 'work', 'value' => @contact.email}], 'background': @contact.body} )
+      @api_client.post('contacts.json', {'first_name': @contact.first_name, 'last_name': @contact.last_name, 'emails': [{ 'type' => 'work', 'value' => @contact.email}], 'phones': [{ 'type' => 'other', 'value' => @contact.phone}], 'background': @contact.body} )
       redirect_to request.referrer, notice: "Thank you, We will be in touch shortly!"
     else
       render :new
@@ -35,6 +34,7 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :body)
+    params.require(:contact).permit(:first_name, :last_name, :phone, :email, :body)
   end
 end
+
