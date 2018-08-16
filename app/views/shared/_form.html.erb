@@ -26,7 +26,10 @@
                 <%= f.text_area :body, placeholder: 'Your Message', :required => true, class: "form-control", rows: '6' %>
               </div>
               <div class="form-group">
-                <%= f.submit 'Send', class: "form-btn" %>
+                <div style="display:flex;justify-content:space-between;">
+                  <%= recaptcha_tags %>
+                  <%= f.submit 'Send', class: "form-btn" %>
+                </div>
               </div>
               <% end %>
             <!-- </form> -->
