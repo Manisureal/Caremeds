@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get 'admin', to: 'devise/sessions#new'
   end
 
+  get 'sitemap', to: 'sitemaps#index'
+
   get 'home', to: 'pages#home', as: 'home'
   get 'pharmacy', to: 'pages#pharmacy', as: 'pharmacy'
   get 'careproviders', to: 'pages#careproviders', as: 'careproviders'
@@ -19,6 +21,7 @@ Rails.application.routes.draw do
 
   get 'contact-us', to: 'contacts#new', as: 'new_contact'
   post 'contact-us', to: 'contacts#create', as: 'create_contact'
+
   root to: 'pages#home'
 
 end
