@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc><%= @host %></loc>
+   </url>
+   <url>
+      <loc><%= "#{@host}#{home_path}" %></loc>
+   </url>
+   <url>
+      <loc><%= "#{@host}#{pharmacy_path}" %></loc>
+   </url>
+   <url>
+      <loc><%= "#{@host}#{careproviders_path}" %></loc>
+   </url>
+   <url>
+      <loc><%= "#{@host}#{contactus_path}" %></loc>
+   </url>
+   <url>
+      <loc><%= "#{@host}#{news_path}" %></loc>
+   </url>
+   <% @news_blogs.each do |nb| %>
+     <url>
+        <loc><%= "#{@host}/news_show/#{nb.id}" %></loc>
+     </url>
+   <% end %>
+</urlset>
+
