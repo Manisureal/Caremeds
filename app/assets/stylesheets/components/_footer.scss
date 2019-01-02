@@ -22,25 +22,26 @@
 
 .footer-content {
   display:flex;
+  padding-bottom:10px;
 }
 @media (max-width: 576px) {
   .footer-content {
     display:flex;
     flex-wrap:wrap;
+    padding-bottom:0;
   }
+}
+
+.footer-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-links {
   display: flex;
   align-items: center;
   justify-content:center;
-}
-@media (max-width: 500px) {
-  .footer-links {
-    justify-content: space-evenly;
-    /* padding: 10px 0px; */
-    padding-bottom:10px;
-  }
 }
 .footer-links a {
   color: black;
@@ -52,6 +53,14 @@
 .footer-links a:hover {
   opacity: 1;
 }
+@media (max-width: 500px) {
+  .footer-links {
+    justify-content: space-evenly;
+    /* padding: 10px 0px; */
+    padding-bottom:10px;
+  }
+}
+
 .footer .fa-heart {
   color: #D23333;
 }
